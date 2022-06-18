@@ -9,7 +9,7 @@ void main(){
       child: Column(
         children: <Widget>[
           FlatButton(
-              onPressed: () {
+              onPressed: (){
                 print("botão clicado!");
               },
               child: Text(
