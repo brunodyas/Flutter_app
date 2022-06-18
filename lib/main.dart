@@ -3,24 +3,25 @@ import 'package:flutter/material.dart';
 void main(){
 
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     title: "Frases do Dia",
     home: Container(
-      color: Colors.white,
+      padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+      margin: EdgeInsets.all(20),
+      //color: Colors.white,
+      decoration: BoxDecoration(
+        border: Border.all(width: 3, color: Colors.white)
+      ),
       child: Column(
         children: <Widget>[
-          FlatButton(
-              onPressed: (){
-                print("botão clicado!");
-              },
-              child: Text(
-                "Click aqui",
-                style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.black,
-                  decoration: TextDecoration.none
-                )
-              )
-          )
+          Text("T1"),
+          Padding(
+            padding: EdgeInsets.all(30),
+            child: Text("T2"),
+
+          ),
+
+          Text("T3"),
         ],
       ),
     )
