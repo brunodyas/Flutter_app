@@ -3,18 +3,42 @@ import 'package:flutter/material.dart';
 void main(){
 
   runApp(MaterialApp(
-    //debugShowCheckedModeBanner: false,
-    title: "Frases do Dia",
-    home: Container(
-      margin: EdgeInsets.only(top: 40),
-           //color: Colors.white,
-      decoration: BoxDecoration(
-        border: Border.all(width: 3, color: Colors.white)
+    debugShowCheckedModeBanner: false,
+
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text("Instagram"),
+        backgroundColor: Colors.deepPurpleAccent,
       ),
-      child: Image.asset(
-        "images/mesa.jpg",
-        fit: BoxFit.cover,
+      body: Padding(
+        padding: EdgeInsets.all(16),
+        child: Text("Conteúdo principal"),
       ),
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.deepPurpleAccent,
+        child: Padding(
+          padding: EdgeInsets.all(16),
+          child: Row(
+            children: <Widget>[
+              Text("Texto1",
+                style: TextStyle(
+                  fontSize: 15,
+                  fontStyle: FontStyle.normal,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.lightGreenAccent,
+                ), ),
+              Text("Texto2",
+                style: TextStyle(
+                  fontSize: 15,
+                  fontStyle: FontStyle.normal,
+                  fontWeight: FontWeight.bold,
+
+                ), ),
+            ],
+          ),
+        ),
+      ),
+
     ),
   ));
 }
